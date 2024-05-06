@@ -10,4 +10,24 @@
 # Outputs
 # volume
 #
-# test output radius of 3 should give volume of 113.09733552923254
+# test output radius of 3 should give volume of 113.097335529232
+
+
+import math
+
+def calculate_sphere_volume(radius):
+    volume = (4/3) * math.pi * (radius ** 3)
+    return volume
+
+def main():
+  
+    radius_str = input("Enter the radius of the sphere: ")
+
+    radius = float(radius_str)
+
+    volume = calculate_sphere_volume(radius)
+
+    print(f"The volume of the sphere with radius {radius} is: {volume:.15f}")
+
+if __name__ == "__main__":
+    main()

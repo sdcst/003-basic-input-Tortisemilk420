@@ -13,3 +13,16 @@
 # Note: You will need to do some strange things with your cube root.
 # Remember that a cube root is the same as an exponent of 1/3, but
 # here you will need to do a power of 1.0/3 or something strange happens.
+
+
+import math
+
+def find_radius(volume):
+    pi = math.pi
+    r = (3 * volume / (4 * pi)) ** (1.0 / 3)
+    return r
+
+
+volume = 20.22
+radius = find_radius(volume)
+print("Volume of", volume, "should give radius of:", radius)
